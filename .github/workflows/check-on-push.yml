@@ -46,7 +46,7 @@ jobs:
         if: matrix.platform == 'windows-latest'
         with:
           name: windows-updater-artifacts
-          path: ./li\tauri-bundler\test\fixture\config\src-tauri\target\debug\app.x64.msi.*
+          path: ./cli/tauri-bundler/test/fixture/config/src-tauri/target/debug/app.x64.msi.*
 
       - uses: actions/upload-artifact@v2
         if: matrix.platform == 'macos-latest'
