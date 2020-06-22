@@ -10,10 +10,10 @@ jobs:
   build-artifacs:
     runs-on: ${{ matrix.platform }}
 
-        strategy:
-          fail-fast: false
-          matrix:
-            platform: [ubuntu-latest, macos-latest, windows-latest]
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [ubuntu-latest, macos-latest, windows-latest]
             
     steps:
       - uses: actions/checkout@v2
